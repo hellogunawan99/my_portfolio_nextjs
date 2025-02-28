@@ -26,7 +26,7 @@ const skillCategories = [
     name: "DevOps",
     skills: [
       { name: 'Docker', icon: FaDocker, color: '#2496ED', description: 'Containerization for efficient application deployment' },
-      { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5', description: 'Container orchestration for managing complex deployments' },
+      // { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5', description: 'Container orchestration for managing complex deployments' },
       { name: 'Nginx', icon: SiNginx, color: '#009639', description: 'High-performance web server and reverse proxy' },
     ]
   },
