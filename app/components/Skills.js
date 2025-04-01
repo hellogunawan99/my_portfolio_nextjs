@@ -16,7 +16,8 @@ import {
   SiGnubash,
   SiVisualstudiocode,
   SiGooglegemini,
-  SiAnthropic
+  SiAnthropic,
+  SiDeepseekai
 } from 'react-icons/si';
 import { DiGo } from 'react-icons/di';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
