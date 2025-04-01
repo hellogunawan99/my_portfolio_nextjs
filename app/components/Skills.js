@@ -70,9 +70,10 @@ const skillCategories = [
   {
     name: "Command Prompt AI Tools",
     skills: [
-      { name: 'Cloud AI', icon: SiAnthropic, color: '#4285F4', description: 'AI services on cloud platforms for various applications' },
-      { name: 'ChatGPT', icon: SiOpenai, color: '#00A67E', description: 'Advanced language model for natural conversations and tasks' },
-      { name: 'Gemini', icon: SiGooglegemini, color: '#4285F4', description: "Google's multimodal AI model for diverse applications" }, 
+      { name: 'Cloud AI', icon: SiAnthropic, color: '#4285F4', description: 'AI excellent for Code' },
+      { name: 'ChatGPT', icon: SiOpenai, color: '#00A67E', description: 'AI excellent for general' },
+      { name: 'Gemini', icon: SiGooglegemini, color: '#4285F4', description: "AI excellent for up to date data" },
+      { name: 'Gemini', icon: SiDeepseekai, color: '#007bff', description: "AI excellent for reasoning and cheap API" },
     ]
   },
 ];
