@@ -17,7 +17,7 @@ import {
   SiVisualstudiocode,
   SiGooglegemini,
   SiAnthropic,
-  SiDeepseekai
+  SiDeepseek
 } from 'react-icons/si';
 import { DiGo } from 'react-icons/di';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
@@ -74,7 +74,7 @@ const skillCategories = [
       { name: 'Cloud AI', icon: SiAnthropic, color: '#4285F4', description: 'AI excellent for Code' },
       { name: 'ChatGPT', icon: SiOpenai, color: '#00A67E', description: 'AI excellent for general' },
       { name: 'Gemini', icon: SiGooglegemini, color: '#4285F4', description: "AI excellent for up to date data" },
-      { name: 'Gemini', icon: SiDeepseekai, color: '#007bff', description: "AI excellent for reasoning and cheap API" },
+      { name: 'DeepSeek', icon: SiDeepseek, color: '#6236FF', description: "AI excellent for reasoning and low price API" },
     ]
   },
 ];
