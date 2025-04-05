@@ -4,9 +4,9 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import { 
-  FaDocker, FaPython, FaGitAlt, FaLinux, FaWindows,
-  FaHtml5, FaCss3Alt, FaJs, FaFileExcel, FaFileWord, FaFilePowerpoint,
-  FaRobot, FaTerminal,
+  FaDocker, FaPython,FaLinux, FaWindows,
+  FaCss3Alt, FaJs, FaFileExcel, FaFileWord, FaFilePowerpoint,
+  FaRobot,
   FaGithub
 } from 'react-icons/fa';
 import { 
@@ -17,7 +17,6 @@ import {
   SiVisualstudiocode,
   SiGooglegemini,
   SiAnthropic,
-  SiDeepseek
 } from 'react-icons/si';
 import { DiGo } from 'react-icons/di';
 import { AiOutlineConsoleSql } from 'react-icons/ai';
@@ -74,7 +73,7 @@ const skillCategories = [
       { name: 'Cloud AI', icon: SiAnthropic, color: '#4285F4', description: 'AI excellent for Code' },
       { name: 'ChatGPT', icon: SiOpenai, color: '#00A67E', description: 'AI excellent for general' },
       { name: 'Gemini', icon: SiGooglegemini, color: '#4285F4', description: "AI excellent for up to date data" },
-      { name: 'DeepSeek', icon: SiDeepseek, color: '#6236FF', description: "AI excellent for reasoning and low price API" },
+      { name: 'DeepSeek', icon: FaRobot, color: '#6236FF', description: "AI excellent for reasoning and low price API" },
     ]
   },
 ];
