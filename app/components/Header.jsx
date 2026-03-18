@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Header.module.css';
 import { FaTimes } from 'react-icons/fa';
 
@@ -65,34 +66,60 @@ export default function Header() {
       </div>
       {isMobile ? (
         <>
-          <button onClick={toggleMenu} className={styles.burgerMenu}>
+          <motion.button
+            onClick={toggleMenu}
+            className={styles.burgerMenu}
+            whileTap={{ scale: 0.9 }}
+          >
             <span></span>
             <span></span>
             <span></span>
-          </button>
-          {isMenuOpen && (
-            <nav className={styles.mobileNav} ref={mobileNavRef}>
-              <button onClick={closeMenu} className={styles.closeButton}>
-                <FaTimes />
-              </button>
-              <ul className={styles.mobileNavList}>
-                <li><a href="#about" onClick={(e) => scrollToSection(e, '#about')}>About Me</a></li>
-                <li><a href="#experience" onClick={(e) => scrollToSection(e, '#experience')}>Experience</a></li>
-                <li><a href="#skills" onClick={(e) => scrollToSection(e, '#skills')}>Skills</a></li>
-                <li><a href="#projects" onClick={(e) => scrollToSection(e, '#projects')}>Projects</a></li>
-                <li><a href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>Contact</a></li>
-              </ul>
-            </nav>
-          )}
+          </motion.button>
+          <AnimatePresence>
+            {isMenuOpen && (
+              <motion.nav
+                className={styles.mobileNav}
+                ref={mobileNavRef}
+                initial={{ opacity: 0, x: '100%' }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: '100%' }}
+                transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+              >
+                <motion.button
+                  onClick={closeMenu}
+                  className={styles.closeButton}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <FaTimes />
+                </motion.button>
+                <ul className={styles.mobileNavList}>
+                  {['About Me', 'Experience', 'Skills', 'Projects', 'Contact'].map((item, index) => (
+                    <motion.li
+                      key={item}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <a href={`#${item.toLowerCase().replace(' ', '')}`} onClick={(e) => scrollToSection(e, `#${item.toLowerCase().replace(' ', '')}`)}>{item}</a>
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.nav>
+            )}
+          </AnimatePresence>
         </>
       ) : (
         <nav>
           <ul className={styles.navList}>
-            <li><a href="#about" onClick={(e) => scrollToSection(e, '#about')}>About Me</a></li>
-            <li><a href="#experience" onClick={(e) => scrollToSection(e, '#experience')}>Experience</a></li>
-            <li><a href="#skills" onClick={(e) => scrollToSection(e, '#skills')}>Skills</a></li>
-            <li><a href="#projects" onClick={(e) => scrollToSection(e, '#projects')}>Projects</a></li>
-            <li><a href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>Contact</a></li>
+            {['About Me', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
+              <motion.li
+                key={item}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a href={`#${item.toLowerCase().replace(' ', '')}`} onClick={(e) => scrollToSection(e, `#${item.toLowerCase().replace(' ', '')}`)}>{item}</a>
+              </motion.li>
+            ))}
           </ul>
         </nav>
       )}

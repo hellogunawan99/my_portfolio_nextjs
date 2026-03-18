@@ -2,10 +2,11 @@
 
 import Image from 'next/image';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import OptimizedImage from './OptimizedImage';
 import styles from './Experience.module.css';
 
 const experienceData = [
-    // Add more experiences as needed
   {
     id: 4,
     type: 'work',
@@ -46,13 +47,32 @@ const experienceData = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-gray-100">
+    <section id="experience" className="py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-orange-400">My Experience</h2>
+        <motion.h2
+          className="text-4xl font-bold mb-12 text-center text-orange-400"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          My Experience
+        </motion.h2>
         <div className={styles.timelineContainer}>
           {experienceData.map((exp, index) => (
-            <div key={exp.id} className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}>
-              <div className={`${styles.timelineContent} bg-white shadow-lg rounded-lg p-6 relative`}>
+            <motion.div
+              key={exp.id}
+              className={`${styles.timelineItem} ${index % 2 === 0 ? styles.left : styles.right}`}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              <motion.div
+                className={`${styles.timelineContent} bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 relative`}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
                 <div className={`${styles.icon} ${exp.type === 'education' ? 'bg-gray-800' : 'bg-gray-600'} ${styles.iconContainer}`}>
                   {exp.type === 'education' ? (
                     <FaGraduationCap className="text-white text-2xl" />
@@ -63,21 +83,21 @@ export default function Experience() {
                 <div className="flex items-start mb-4">
                   <div className="flex-grow pr-4">
                     <h3 className="text-xl font-semibold mb-2 text-blue-500">{exp.title}</h3>
-                    <p className="text-sm font-medium text-gray-700 mb-1">{exp.organization}</p>
-                    <p className="text-xs text-gray-500">{exp.date}</p>
+                    <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{exp.organization}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{exp.date}</p>
                   </div>
                   <div className="flex-shrink-0 w-20 h-20 relative">
-                    <Image 
-                      src={exp.logo} 
-                      alt={`${exp.organization} logo`} 
+                    <OptimizedImage
+                      src={exp.logo}
+                      alt={`${exp.organization} logo`}
                       fill
                       style={{ objectFit: 'contain' }}
                     />
                   </div>
                 </div>
-                <p className="text-sm text-gray-600">{exp.details}</p>
-              </div>
-            </div>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{exp.details}</p>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
