@@ -2,9 +2,11 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import OptimizedImage from './OptimizedImage';
+import { useState } from 'react';
 
 export default function About() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <section id="about" className="py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -63,14 +65,28 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <OptimizedImage
+              {!imageLoaded && (
+                <motion.div
+                  className="absolute inset-0 bg-gray-200 dark:bg-gray-700 rounded-full"
+                  animate={{
+                    opacity: [0.5, 0.8, 0.5],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              )}
+              <Image
                 src="/gunawan.png"
                 alt="Gunawan Wibisono"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 style={{ objectFit: 'contain' }}
-                className="rounded-full shadow-lg"
+                className={`rounded-full shadow-lg transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                 priority={true}
+                onLoad={() => setImageLoaded(true)}
               />
             </motion.div>
           </motion.div>
