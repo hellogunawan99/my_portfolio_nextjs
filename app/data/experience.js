@@ -1,0 +1,42 @@
+export const experienceData = [
+  {
+    id: 1,
+    type: 'work',
+    title: 'Support Engineer APAC',
+    company: 'Hexagon',
+    period: 'December 2025 - Present',
+    description: 'Providing advanced technical support and solutions for Hexagon software products across the Asia-Pacific region.',
+  },
+  {
+    id: 2,
+    type: 'work',
+    title: 'Software Support Engineer APAC',
+    company: 'Hexagon',
+    period: 'May 2025 - November 2025',
+    description: 'Supported enterprise clients with Hexagon Jigsaw and related Fleet Management solutions across APAC.',
+  },
+  {
+    id: 3,
+    type: 'work',
+    title: 'Technician',
+    company: 'Yuli Computer',
+    period: 'April 10 - May 20, 2025',
+    description: 'Hardware and software troubleshooting, computer repair, and technical support services.',
+  },
+  {
+    id: 4,
+    type: 'work',
+    title: 'System Administrator',
+    company: 'PT. Saptaindra Sejati',
+    period: 'November 2022 - April 5, 2025',
+    description: 'Managed and maintained Fleet Management System (FMS) infrastructure for fleet operations optimization.',
+  },
+  {
+    id: 5,
+    type: 'education',
+    title: "Associate's Degree in Oil Palm Plantation",
+    company: 'Institut Perkebunan Yogyakarta',
+    period: '2017 - 2018',
+    description: 'Focused on management and agricultural sciences for plantation operations.',
+  },
+];
