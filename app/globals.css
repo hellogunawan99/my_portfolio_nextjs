@@ -3,18 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-primary: #FAF9F7;
+  --background-secondary: #F5F3EF;
+  --text-primary: #2D2D2D;
+  --text-secondary: #6B6B6B;
+  --accent: #C4846C;
+  --accent-hover: #A66B52;
+  --border-color: #E8E5E1;
+  --surface: #FFFFFF;
+  
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 8rem;
+}
+
+.dark {
+  --background-primary: #1C1C1C;
+  --background-secondary: #252525;
+  --text-primary: #F5F3EF;
+  --text-secondary: #9CA3AF;
+  --surface: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  font-family: var(--font-inter), sans-serif;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
