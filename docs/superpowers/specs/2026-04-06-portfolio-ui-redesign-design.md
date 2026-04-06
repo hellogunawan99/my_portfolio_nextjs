@@ -330,7 +330,7 @@ app/
 |----------|---------|--------|-------------|
 | Support Engineer APAC | Hexagon | Dec 2025 - Present | ✅ Keep (current) |
 | Software Support Engineer APAC | Hexagon | May 25, 2025 - Nov 2025 | ✅ Keep (promotion) |
-| Technician | Yuli Computer | May 2025 | ✅ Keep (transition) |
+| Technician | Yuli Computer | Apr 10 - May 20, 2025 | ✅ Keep (transition) |
 | System Administrator | PT. Saptaindra Sejati | Nov 2022 - Apr 5, 2025 | ✅ Keep (main) |
 | Associate's Degree | Institut Perkebunan Yogyakarta | 2017 - 2018 | ✅ Keep (education) |
 | Field Support Technician | PT. Saptaindra Sejati | ❌ Remove (merged with SysAdmin) |
