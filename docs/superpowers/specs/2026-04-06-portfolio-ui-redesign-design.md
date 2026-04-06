@@ -324,14 +324,17 @@ app/
 
 ### Experience Data (Simplify)
 **Current:** 4 entries with detailed descriptions  
-**New:** 2-3 entries, concise descriptions
+**New:** 3 entries + education, concise descriptions
 
-| Position | Company | Keep/Remove |
-|----------|---------|--------------|
-| System Administrator | PT. Saptaindra Sejati | ✅ Keep (main) |
-| Field Support Technician | PT. Saptaindra Sejati | ❌ Remove |
+| Position | Company | Period | Keep/Remove |
+|----------|---------|--------|-------------|
+| Support Engineer APAC | Hexagon | Dec 2025 - Present | ✅ Keep (current) |
+| Software Support Engineer APAC | Hexagon | May 25, 2025 - Nov 2025 | ✅ Keep (promotion) |
+| Technician | Yuli Computer | May 2025 | ✅ Keep (transition) |
+| System Administrator | PT. Saptaindra Sejati | Nov 2022 - Apr 5, 2025 | ✅ Keep (main) |
+| Associate's Degree | Institut Perkebunan Yogyakarta | 2017 - 2018 | ✅ Keep (education) |
+| Field Support Technician | PT. Saptaindra Sejati | ❌ Remove (merged with SysAdmin) |
 | English Mastery Program | Mr. BOB | ❌ Remove (not professional) |
-| Associate's Degree | Institut Perkebunan | ✅ Keep (brief) |
 
 ### Skills Data (Curate)
 **Current:** 25+ skills with detailed descriptions  
