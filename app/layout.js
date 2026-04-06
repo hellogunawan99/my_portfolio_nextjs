@@ -1,14 +1,15 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "./components/Footer";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import ThemeToggle from "./components/ThemeToggle";
+import ThemeToggle from "./components/ui/ThemeToggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Gunawan Wibisono - Portfolio",
-  description: "Professional portfolio of Gunawan Wibisono",
+  description: "DevOps Engineer & System Administrator based in Indonesia",
 };
 
 export default function RootLayout({ children }) {
@@ -16,9 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
         <ThemeProvider>
+          <Header />
           {children}
+          <Footer />
           <ThemeToggle />
-          <Footer/>
         </ThemeProvider>
       </body>
     </html>
