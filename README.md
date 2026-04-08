@@ -1,39 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gunawan Wibisono Portfolio
+
+A modern, minimalist portfolio website built with Next.js 14, featuring a warm neutral design with editorial elegance.
+
+## Tech Stack
+
+- **Framework:** Next.js 14.2.4
+- **Styling:** Tailwind CSS 3.4.1
+- **Animations:** Framer Motion 11.3.21
+- **Icons:** React Icons 5.2.1
+
+## Design Features
+
+- Warm neutral color palette (cream backgrounds, terracotta accents)
+- Editorial elegance with generous whitespace
+- Dark mode support
+- Smooth scroll-triggered animations
+- Fully responsive design
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3010](http://localhost:3010) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+app/
+├── components/
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   └── ui/
+│       └── ThemeToggle.jsx
+├── contexts/
+│   └── ThemeContext.jsx
+├── data/
+│   ├── experience.js
+│   ├── skills.js
+│   └── projects.js
+├── globals.css
+├── layout.js
+└── page.js
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev     # Start development server (port 3010)
+npm run build   # Build for production
+npm run start   # Start production server
+npm run lint   # Run ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project is configured for static export. Deploy to Vercel, Netlify, or any static hosting provider.
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Static files will be generated in the `out` directory.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author
 
+**Gunawan Wibisono**  
+DevOps Engineer & System Administrator  
+Support Engineer 24/7 APAC @ Hexagon
 
-> This is a test comment added by Lina on Wed Mar 18 09:27:38 PM WITA 2026
+- LinkedIn: [gunawan-wibisono](https://www.linkedin.com/in/gunawan-wibisono-9aa883237/)
+- GitHub: [hellogunawan99](https://github.com/hellogunawan99)
+- Email: gunawanwibisono4712@gmail.com
