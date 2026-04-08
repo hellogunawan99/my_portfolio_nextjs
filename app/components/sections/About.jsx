@@ -58,8 +58,8 @@ export default function About() {
                   I specialize in Linux administration, automation, and infrastructure optimization.
                 </p>
                 <p>
-                  Currently working as a Support Engineer APAC at Hexagon, delivering solutions 
-                  and technical support across the Asia-Pacific region.
+                  Currently working as a Support Engineer APAC at Hexagon, providing solutions 
+                  and technical support for Fleet Management Systems across the Asia-Pacific region.
                 </p>
               </div>
 
