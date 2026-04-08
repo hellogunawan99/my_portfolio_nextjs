@@ -54,7 +54,7 @@ export default function About() {
 
               <div className="space-y-4 text-[#6B6B6B] dark:text-[#9CA3AF]">
                 <p>
-                  With over 2 years of experience managing Fleet Management System infrastructure, 
+                  With over 3 years of experience managing Fleet Management System infrastructure, 
                   I specialize in Linux administration, automation, and infrastructure optimization.
                 </p>
                 <p>
