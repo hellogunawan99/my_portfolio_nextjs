@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { skillsData } from '../../data/skills';
 import { FaDocker, FaLinux, FaGithub, FaCode } from 'react-icons/fa';
-import { SiGo, SiNginx, SiNextdotjs, SiVisualstudiocode, SiGooglechat, SiDeepseek, SiAnthropic } from 'react-icons/si';
+import { SiGo, SiNginx, SiNextdotjs, SiVisualstudiocode, SiGooglechat, SiAnthropic } from 'react-icons/si';
 import { FiDatabase } from 'react-icons/fi';
 import { BiBot } from 'react-icons/bi';
 import { BsChatSquareText } from 'react-icons/bs';
@@ -22,7 +22,7 @@ const iconMap = {
   Bot: BiBot,
   MessageSquare: BsChatSquareText,
   MiniMax: SiGooglechat,
-  Deepseek: SiDeepseek,
+  Deepseek: FaCode,
   ClaudeCode: SiAnthropic,
   Trae: FaCode,
   Opencode: FaCode,
