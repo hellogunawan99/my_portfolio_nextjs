@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { skillsData } from '../../data/skills';
-import { FaDocker, FaLinux, FaGithub, FaCode } from 'react-icons/fa';
+import { FaDocker, FaLinux, FaGithub, FaCode, FaGithubAlt } from 'react-icons/fa';
 import { SiGo, SiNginx, SiNextdotjs, SiVisualstudiocode, SiGooglechat, SiAnthropic } from 'react-icons/si';
 import { FiDatabase } from 'react-icons/fi';
 import { BiBot } from 'react-icons/bi';
@@ -26,6 +26,7 @@ const iconMap = {
   ClaudeCode: SiAnthropic,
   Trae: FaCode,
   Opencode: FaCode,
+  Lobster: FaGithubAlt,
 };
 
 export default function Skills() {

@@ -23,6 +23,6 @@ export const skillsData = {
     { name: 'Deepseek', icon: 'Deepseek' },
     { name: 'Claude Code', icon: 'ClaudeCode' },
     { name: 'Opencode', icon: 'Opencode' },
-    { name: 'Open Claw', icon: 'Opencode' },
+    { name: 'Open Claw', icon: 'Lobster' },
   ],
 };
