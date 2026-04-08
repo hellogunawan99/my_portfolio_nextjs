@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     type: 'work',
-    title: 'Support Engineer APAC',
+    title: 'Support Engineer 24/7 APAC',
     company: 'Hexagon',
     period: 'December 2025 - Present',
     description: 'Providing advanced technical support and solutions for Hexagon software products across the Asia-Pacific region.',
@@ -10,7 +10,7 @@ export const experienceData = [
   {
     id: 2,
     type: 'work',
-    title: 'Software Support Engineer APAC',
+    title: 'Software Support Engineer 24/7 APAC',
     company: 'Hexagon',
     period: 'May 2025 - November 2025',
     description: 'Supported enterprise clients with Hexagon Jigsaw and related Fleet Management solutions across APAC.',
