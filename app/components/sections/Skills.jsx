@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { skillsData } from '../../data/skills';
-import { FaDocker, FaPython, FaLinux, FaJs, FaGithub } from 'react-icons/fa';
-import { SiGo, SiNginx, SiNextdotjs, SiVisualstudiocode } from 'react-icons/si';
+import { FaDocker, FaLinux, FaGithub, FaCode } from 'react-icons/fa';
+import { SiGo, SiNginx, SiNextdotjs, SiVisualstudiocode, SiGooglechat, SiDeepseek, SiAnthropic } from 'react-icons/si';
 import { FiDatabase } from 'react-icons/fi';
 import { BiBot } from 'react-icons/bi';
 import { BsChatSquareText } from 'react-icons/bs';
@@ -11,18 +11,26 @@ import { BsChatSquareText } from 'react-icons/bs';
 const iconMap = {
   Container: FaDocker,
   Server: SiNginx,
-  Code: FaPython,
+  Python: FaCode,
+  Go: SiGo,
+  JavaScript: FaCode,
   Database: FiDatabase,
   Terminal: FaLinux,
   GitBranch: FaGithub,
   Layers: SiNextdotjs,
+  VSCode: SiVisualstudiocode,
   Bot: BiBot,
   MessageSquare: BsChatSquareText,
+  MiniMax: SiGooglechat,
+  Deepseek: SiDeepseek,
+  ClaudeCode: SiAnthropic,
+  Trae: FaCode,
+  Opencode: FaCode,
 };
 
 export default function Skills() {
   const renderSkill = (skill, index, categoryIndex) => {
-    const IconComponent = iconMap[skill.icon] || FaJs;
+    const IconComponent = iconMap[skill.icon] || FaCode;
     
     return (
       <motion.div
